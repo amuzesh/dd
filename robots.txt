@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://fashion.thefa.live/main-sitemap.xml
