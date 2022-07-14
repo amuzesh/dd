@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Magazines To Publish Poetry at My-Fashion
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Thefa",
+    "url": "https://www.google.com/search?q=Thefa"
+  },
+  "headline": "Magazines To Publish Poetry",
+  "datePublished": "2022-06-22T05:46:42Z",
+  "image": "https://tse1.mm.bing.net/th?q=magazines%20to%20publish%20poetry",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Thefa Fashion Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=magazines%20to%20publish%20poetry&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=magazines%20to%20publish%20poetry" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=magazines%20to%20publish%20poetry" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Thefa Fashion Ideas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Magazines To Publish Poetry at My-Fashion
+          </h1>
+          <p class="lead">
+                          Best my-fashion Tips and Ideas website . Search anything about my-fashion Ideas in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Magazines To Publish Poetry</h2>
+    <p><strong>Magazines To Publish Poetry</strong>. The deadline is 31 may 2022. So it makes it a logical choice to publish your poems.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=magazines%20to%20publish%20poetry" alt="Poetry" />
+        <br>
+        <figcaption>Poetry from cazgoodwin.com</figcaption>
+    </figure>
+        <p>
+        Indian poems houghton mifflin harcourt, 2005, pp booksie is a free online writing site that provides the tools for writers to publish their work and connect with readers from across the world publishing essays, fiction, and poetry from promising and prominent authors, the antioch review has an international readership and reputation… The orchards poetry journal encourages rhymed verse in traditional forms, but also accept free verse. So it makes it a logical choice to publish your poems.
+    </p>
+    <h3>Poetry</h3>
+    <p>The deadline is 31 may 2022. Many of these poetry magazines and markets are the best in the country. The first anthology, pain &amp; renewal, explores the highs and lows of the human experience. Find details about every creative writing competition—including poetry contests, short story competitions, essay contests, awards for novels, grants for translators, and more—that we’ve published in the grants &amp; awards section of poets &amp; writers magazine during the past year.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Best Places to Submit Poetry A Ranking of Literary Magazines Bookfox" data-src="https://i2.wp.com/thejohnfox.com/wp-content/uploads/2016/05/Ranking-of-Poetry-Journals.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: thejohnfox.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Poetry, short stories, essays are all forms of writing that own very tiny shares in the publishing landscape — except in the world of literary magazines, where they reign supreme. Measure review is a magazine dedicated to formal poetry, and they “strive to publish poetry that takes risks while working within clearly defined frameworks.”. We also publish a wide range.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Poem Published in Poetry Wales magazine" data-src="https://i2.wp.com/1.bp.blogspot.com/-LIej-TqYddY/YIsBMERv90I/AAAAAAAACUQ/AwqG6yU-jJYzcW1HidPaI6K18uKDzWAVwCNcBGAsYHQ/s2048/_20210429_195121.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tazrahman.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Second place being a $300 cash prize plus publication; Send up to 5 poems. Sparks of calliope accepts both free verse and traditional poetry. If you’re an aspiring author, submitting to literary magazines is a great way to get your foot into the door of the publishing industry, as it allows you to build up your credentials and reach readers..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="A PUBLISHED POEM….INVINCIBLE MAGAZINE Dr Pallavi Kwatra Thoughts" data-src="https://i0.wp.com/www.drpallavikwatra.com/wp-content/uploads/2018/02/invincible-magzine.jpg?fit=533%2C960&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.drpallavikwatra.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">An online magazine that publishes edgy, diverse writing by new and established writers from australia and worldwide. Sparks of calliope accepts both free verse and traditional poetry. We also publish a wide range of poetry in translation. Vita brevis poetry magazine publishes some of the best emerging poets out there, pairing their work with tonally relevant artwork. Here is out.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-much-student-can-earn-in-uk-per-month.html" class="be-post-title">
+				 <h6>how much student can earn in uk per month </h6>
+                </a>
+                <a href="how-much-student-can-earn-in-uk-per-month.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20much%20student%20can%20earn%20in%20uk%20per%20month&amp;w=50&amp;h=50&amp;c=7" alt="how much student can earn in uk per month">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="paris-fashion-week-schedule-2019.html" class="be-post-title">
+				 <h6>paris fashion week schedule 2019 </h6>
+                </a>
+                <a href="paris-fashion-week-schedule-2019.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=paris%20fashion%20week%20schedule%202019&amp;w=50&amp;h=50&amp;c=7" alt="paris fashion week schedule 2019">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="milan-fashion-week-2022-calendar.html" class="be-post-title">
+				 <h6>milan fashion week 2022 calendar </h6>
+                </a>
+                <a href="milan-fashion-week-2022-calendar.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=milan%20fashion%20week%202022%20calendar&amp;w=50&amp;h=50&amp;c=7" alt="milan fashion week 2022 calendar">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="most-beautiful-small-town-in-france.html" class="be-post-title">
+				 <h6>most beautiful small town in france </h6>
+                </a>
+                <a href="most-beautiful-small-town-in-france.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=most%20beautiful%20small%20town%20in%20france&amp;w=50&amp;h=50&amp;c=7" alt="most beautiful small town in france">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-sports-brand-is-most-ethical.html" class="be-post-title">
+				 <h6>what sports brand is most ethical </h6>
+                </a>
+                <a href="what-sports-brand-is-most-ethical.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20sports%20brand%20is%20most%20ethical&amp;w=50&amp;h=50&amp;c=7" alt="what sports brand is most ethical">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-designer-cheaper-in-milan.html" class="be-post-title">
+				 <h6>is designer cheaper in milan </h6>
+                </a>
+                <a href="is-designer-cheaper-in-milan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20designer%20cheaper%20in%20milan&amp;w=50&amp;h=50&amp;c=7" alt="is designer cheaper in milan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="temporary-part-time-jobs-singapore-for-students.html" class="be-post-title">
+				 <h6>temporary part time jobs singapore for students </h6>
+                </a>
+                <a href="temporary-part-time-jobs-singapore-for-students.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=temporary%20part%20time%20jobs%20singapore%20for%20students&amp;w=50&amp;h=50&amp;c=7" alt="temporary part time jobs singapore for students">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-weekday-fast-fashion.html" class="be-post-title">
+				 <h6>is weekday fast fashion </h6>
+                </a>
+                <a href="is-weekday-fast-fashion.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20weekday%20fast%20fashion&amp;w=50&amp;h=50&amp;c=7" alt="is weekday fast fashion">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="new-york-fashion-week-2021-review.html" class="be-post-title">
+				 <h6>new york fashion week 2021 review </h6>
+                </a>
+                <a href="new-york-fashion-week-2021-review.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=new%20york%20fashion%20week%202021%20review&amp;w=50&amp;h=50&amp;c=7" alt="new york fashion week 2021 review">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="new-york-times-store-free-shipping.html" class="be-post-title">
+				 <h6>new york times store free shipping </h6>
+                </a>
+                <a href="new-york-times-store-free-shipping.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=new%20york%20times%20store%20free%20shipping&amp;w=50&amp;h=50&amp;c=7" alt="new york times store free shipping">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Thefa Fashion Ideas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

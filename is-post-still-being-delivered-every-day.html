@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Is Post Still Being Delivered Every Day at My-Fashion
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Thefa",
+    "url": "https://www.google.com/search?q=Thefa"
+  },
+  "headline": "Is Post Still Being Delivered Every Day",
+  "datePublished": "2022-05-21T13:53:56Z",
+  "image": "https://tse1.mm.bing.net/th?q=is%20post%20still%20being%20delivered%20every%20day",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Thefa Fashion Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=is%20post%20still%20being%20delivered%20every%20day&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=is%20post%20still%20being%20delivered%20every%20day" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=is%20post%20still%20being%20delivered%20every%20day" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Thefa Fashion Ideas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Is Post Still Being Delivered Every Day at My-Fashion
+          </h1>
+          <p class="lead">
+                          Best my-fashion Tips and Ideas website . Search anything about my-fashion Ideas in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Is Post Still Being Delivered Every Day</h2>
+    <p><strong>Is Post Still Being Delivered Every Day</strong>. At least when i was a carrier, mail was typically not delivered on saturday to office buildings that were closed on weekends. Usps retail ground (or standard post) makes an attempt to get your mail to its ultimate destination 2 to 8 business days, but again the usps does not guarantee this delivery window.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=is%20post%20still%20being%20delivered%20every%20day" alt="𝖌𝖗𝖆𝖕𝖍𝖎𝖈𝖘 [closed] ladylove [delivery] Wattpad" />
+        <br>
+        <figcaption>𝖌𝖗𝖆𝖕𝖍𝖎𝖈𝖘 [closed] ladylove [delivery] Wattpad from www.wattpad.com</figcaption>
+    </figure>
+        <p>
+        Mail is not delivered on sundays. Canada post delivers packages from monday to friday. According to usps’s holiday schedule, the postal service is only closed on new year’s day, martin luther king jr.’s birthday, presidents day, memorial day, independence day, labor day, columbus day, veterans day, thanksgiving day, and christmas day.
+    </p>
+    <h3>𝖌𝖗𝖆𝖕𝖍𝖎𝖈𝖘 [closed] ladylove [delivery] Wattpad</h3>
+    <p>Certain express mail, and some parc. Federally legislated service standards oblige australia post to deliver a letter within the country in no more than four days at a fixed rate. The federal government has eased restrictions that require australia post to deliver letters every day, as 2000 posties are retrained to meet surging demand for parcels. Royal mail continue to work hard to collect, process and deliver the uk’s mail.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Sam Lee on LinkedIn Well, it’s 3months today since I launched McGin" data-src="https://i2.wp.com/media-exp1.licdn.com/dms/image/C4E22AQGo3gkI9CU0Jg/feedshare-shrink_2048_1536/0/1657274390848?e=1660780800&amp;v=beta&amp;t=v6qwIpiREK6wIKD1D4hfB-kfbvyALAIDV6QvGqiE3Gc" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.linkedin.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">If your post is missing, damaged or opened please contact us through our contact form. Mail is not delivered on sundays. Australia post is delivering about 1.8 million parcels a day. Millions of australians will have to wait longer for letters as posties cut delivery to a few times a week to help cope with record demand amid. On saturday,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="𝖌𝖗𝖆𝖕𝖍𝖎𝖈𝖘 [closed] ladylove [delivery] Wattpad" data-src="https://i2.wp.com/img.wattpad.com/501c00acdab9016c2a6cb7fa062ac7511feab1dc/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f626e767846344837556e5a4b30773d3d2d313230313931393331302e313664623238396234316264323461313831383737343632383235352e6a7067?s=fit&amp;w=720&amp;h=720" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.wattpad.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The federal government has eased restrictions that require australia post to deliver letters every day, as 2000 posties are retrained to meet surging demand for parcels. The usps delivers residential mail and some business mail monday through saturday. Tomorrow is not a post office holiday, so there will be mail deilivery. Federally legislated service standards oblige australia post to deliver.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Delivery Informed Usps Review Reddit" data-src="https://i2.wp.com/zmt.impiantifotovoltaici.milano.it/image.php?src=https://i2.wp.com/picsum.photos/600/400" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: zmt.impiantifotovoltaici.milano.it</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Together with the special queen&#039;s jubilee bank holiday on friday 3 june, it creates a long weekend to mark her majesty&#039;s 70 years on the throne. At least when i was a carrier, mail was typically not delivered on saturday to office buildings that were closed on weekends. A change to the standard mail delivery was announced today by nz.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="men-s-fashion-week-dates.html" class="be-post-title">
+				 <h6>men&#039;s fashion week dates </h6>
+                </a>
+                <a href="men-s-fashion-week-dates.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=men%27s%20fashion%20week%20dates&amp;w=50&amp;h=50&amp;c=7" alt="men&amp;#039;s fashion week dates">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="top-10-travel-bags-in-india.html" class="be-post-title">
+				 <h6>top 10 travel bags in india </h6>
+                </a>
+                <a href="top-10-travel-bags-in-india.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=top%2010%20travel%20bags%20in%20india&amp;w=50&amp;h=50&amp;c=7" alt="top 10 travel bags in india">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="can-students-do-part-time-jobs-in-dubai.html" class="be-post-title">
+				 <h6>can students do part time jobs in dubai </h6>
+                </a>
+                <a href="can-students-do-part-time-jobs-in-dubai.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=can%20students%20do%20part%20time%20jobs%20in%20dubai&amp;w=50&amp;h=50&amp;c=7" alt="can students do part time jobs in dubai">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="smart-casual-dress-code-male-summer.html" class="be-post-title">
+				 <h6>smart casual dress code male summer </h6>
+                </a>
+                <a href="smart-casual-dress-code-male-summer.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=smart%20casual%20dress%20code%20male%20summer&amp;w=50&amp;h=50&amp;c=7" alt="smart casual dress code male summer">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="new-york-times-style-magazine-submissions.html" class="be-post-title">
+				 <h6>new york times style magazine submissions </h6>
+                </a>
+                <a href="new-york-times-style-magazine-submissions.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=new%20york%20times%20style%20magazine%20submissions&amp;w=50&amp;h=50&amp;c=7" alt="new york times style magazine submissions">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="train-from-paris-to-south-of-france-with-car.html" class="be-post-title">
+				 <h6>train from paris to south of france with car </h6>
+                </a>
+                <a href="train-from-paris-to-south-of-france-with-car.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=train%20from%20paris%20to%20south%20of%20france%20with%20car&amp;w=50&amp;h=50&amp;c=7" alt="train from paris to south of france with car">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="weekend-or-evening-jobs.html" class="be-post-title">
+				 <h6>weekend or evening jobs </h6>
+                </a>
+                <a href="weekend-or-evening-jobs.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=weekend%20or%20evening%20jobs&amp;w=50&amp;h=50&amp;c=7" alt="weekend or evening jobs">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="part-time-sales-jobs-glasgow.html" class="be-post-title">
+				 <h6>part time sales jobs glasgow </h6>
+                </a>
+                <a href="part-time-sales-jobs-glasgow.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=part%20time%20sales%20jobs%20glasgow&amp;w=50&amp;h=50&amp;c=7" alt="part time sales jobs glasgow">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="weekend-fashion-jobs-london.html" class="be-post-title">
+				 <h6>weekend fashion jobs london </h6>
+                </a>
+                <a href="weekend-fashion-jobs-london.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=weekend%20fashion%20jobs%20london&amp;w=50&amp;h=50&amp;c=7" alt="weekend fashion jobs london">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="best-7-day-tour-of-france.html" class="be-post-title">
+				 <h6>best 7 day tour of france </h6>
+                </a>
+                <a href="best-7-day-tour-of-france.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=best%207%20day%20tour%20of%20france&amp;w=50&amp;h=50&amp;c=7" alt="best 7 day tour of france">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Thefa Fashion Ideas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

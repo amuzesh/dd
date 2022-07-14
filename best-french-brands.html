@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Best French Brands at My-Fashion
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Thefa",
+    "url": "https://www.google.com/search?q=Thefa"
+  },
+  "headline": "Best French Brands",
+  "datePublished": "2022-04-06T23:19:49Z",
+  "image": "https://tse1.mm.bing.net/th?q=best%20french%20brands",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Thefa Fashion Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=best%20french%20brands&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=best%20french%20brands" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=best%20french%20brands" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Thefa Fashion Ideas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Best French Brands at My-Fashion
+          </h1>
+          <p class="lead">
+                          Best my-fashion Tips and Ideas website . Search anything about my-fashion Ideas in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Best French Brands</h2>
+    <p><strong>Best French Brands</strong>. Brands like balmain, louis v, ysl, and even more have originated in france, paying homage in different seasons to the inspirations and muses scouted and discovered throughout the country. With its fashionable silhouettes and edgy but subtle details, maje&#039;s pieces always feel current.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=best%20french%20brands" alt="French Car Brands 10+ All Best Popular &amp; Famous in 2021" />
+        <br>
+        <figcaption>French Car Brands 10+ All Best Popular &amp; Famous in 2021 from autospruce.com</figcaption>
+    </figure>
+        <p>
+        While other french brands found their footing in the fashion world through the creation of garments or footwear, louis vuitton did so by crafting luxury trunks. Bioderma is one of the most respected french pharmaceutical companies specializing in dermatology. And today these are the brands that becomes a major and very valuable assets, because a strong brand,
+    </p>
+    <h3>French Car Brands 10+ All Best Popular &amp; Famous in 2021</h3>
+    <p>Caudalie is a cult french beauty brand known for its skincare products using vinotherapy techniques. The brand founded in 1854, has never failed to control the luxury market. The luxury labels collections are designed to be. Sandro ’s dna is intimately related to paris.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FranBrand 2011 TOP 100 French Brands" data-src="https://i2.wp.com/image.slidesharecdn.com/franbrand2011-110601063706-phpapp01/95/franbrand-2011-top-100-french-brands-7-728.jpg?cb=1306910305" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">While other french brands found their footing in the fashion world through the creation of garments or footwear, louis vuitton did so by crafting luxury trunks. Dior, chanel, and givenchy are forever known to those who have any interest in fashion, but these aren’t the only places to shop when it comes to french. “ when a woman’s clothes are.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="France 39 major French companies take concrete action to combat" data-src="https://i2.wp.com/w3.windfair.net/uploads/notice/preview/20299/french_business_20151203.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: w3.windfair.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">While the brand produces clothes with traditional african prints inspired by the fofanas’ ethnic roots, maison château rouge has also kept the traditional french aesthetics in each design. Arpenteur may be the ultimate french brand. The french brand louis vuitton rules the fashion realm in the entire world. Louis vuitton has retained its crown at number one in the brandztm.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FranBrand 2010 TOP 100 French Brands" data-src="https://i2.wp.com/cdn.slidesharecdn.com/ss_thumbnails/franbrand2010-101130021804-phpapp02-thumbnail-4.jpg?cb=1422611512" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The brand is lead by demna gvasalia along with other designers who have remained anonymous. Atelier amour is hands down one of the sexiest french lingerie brands — ever. The brand has become a local brand sold in almost every shop. Contents [ show] 1 top french watch brands. It was in 1971 that the couple gérard and.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="famous-fashion-shows-in-the-world.html" class="be-post-title">
+				 <h6>famous fashion shows in the world </h6>
+                </a>
+                <a href="famous-fashion-shows-in-the-world.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=famous%20fashion%20shows%20in%20the%20world&amp;w=50&amp;h=50&amp;c=7" alt="famous fashion shows in the world">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-clothing-apparel.html" class="be-post-title">
+				 <h6>what is a clothing apparel </h6>
+                </a>
+                <a href="what-is-a-clothing-apparel.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20clothing%20apparel&amp;w=50&amp;h=50&amp;c=7" alt="what is a clothing apparel">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="part-time-draughtsman-jobs-in-sri-lanka-2020.html" class="be-post-title">
+				 <h6>part time draughtsman jobs in sri lanka 2020 </h6>
+                </a>
+                <a href="part-time-draughtsman-jobs-in-sri-lanka-2020.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=part%20time%20draughtsman%20jobs%20in%20sri%20lanka%202020&amp;w=50&amp;h=50&amp;c=7" alt="part time draughtsman jobs in sri lanka 2020">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="will-london-fashion-week-be-cancelled.html" class="be-post-title">
+				 <h6>will london fashion week be cancelled </h6>
+                </a>
+                <a href="will-london-fashion-week-be-cancelled.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=will%20london%20fashion%20week%20be%20cancelled&amp;w=50&amp;h=50&amp;c=7" alt="will london fashion week be cancelled">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="example-of-exhibition-event.html" class="be-post-title">
+				 <h6>example of exhibition event </h6>
+                </a>
+                <a href="example-of-exhibition-event.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=example%20of%20exhibition%20event&amp;w=50&amp;h=50&amp;c=7" alt="example of exhibition event">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="top-10-clothing-brands-in-paris.html" class="be-post-title">
+				 <h6>top 10 clothing brands in paris </h6>
+                </a>
+                <a href="top-10-clothing-brands-in-paris.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=top%2010%20clothing%20brands%20in%20paris&amp;w=50&amp;h=50&amp;c=7" alt="top 10 clothing brands in paris">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-fast-fashion-definition.html" class="be-post-title">
+				 <h6>what is fast fashion definition </h6>
+                </a>
+                <a href="what-is-fast-fashion-definition.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20fast%20fashion%20definition&amp;w=50&amp;h=50&amp;c=7" alt="what is fast fashion definition">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="men-s-casual-outfit-ideas-pinterest.html" class="be-post-title">
+				 <h6>men&#039;s casual outfit ideas pinterest </h6>
+                </a>
+                <a href="men-s-casual-outfit-ideas-pinterest.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=men%27s%20casual%20outfit%20ideas%20pinterest&amp;w=50&amp;h=50&amp;c=7" alt="men&amp;#039;s casual outfit ideas pinterest">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="men-s-fashion-week-milan-2022-june.html" class="be-post-title">
+				 <h6>men&#039;s fashion week milan 2022 june </h6>
+                </a>
+                <a href="men-s-fashion-week-milan-2022-june.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=men%27s%20fashion%20week%20milan%202022%20june&amp;w=50&amp;h=50&amp;c=7" alt="men&amp;#039;s fashion week milan 2022 june">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="will-the-mall-be-open-on-the-4th-of-july.html" class="be-post-title">
+				 <h6>will the mall be open on the 4th of july </h6>
+                </a>
+                <a href="will-the-mall-be-open-on-the-4th-of-july.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=will%20the%20mall%20be%20open%20on%20the%204th%20of%20july&amp;w=50&amp;h=50&amp;c=7" alt="will the mall be open on the 4th of july">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Thefa Fashion Ideas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

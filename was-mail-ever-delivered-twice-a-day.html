@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Was Mail Ever Delivered Twice A Day at My-Fashion
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Thefa",
+    "url": "https://www.google.com/search?q=Thefa"
+  },
+  "headline": "Was Mail Ever Delivered Twice A Day",
+  "datePublished": "2022-03-19T19:08:18Z",
+  "image": "https://tse1.mm.bing.net/th?q=was%20mail%20ever%20delivered%20twice%20a%20day",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Thefa Fashion Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=was%20mail%20ever%20delivered%20twice%20a%20day&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=was%20mail%20ever%20delivered%20twice%20a%20day" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=was%20mail%20ever%20delivered%20twice%20a%20day" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Thefa Fashion Ideas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Was Mail Ever Delivered Twice A Day at My-Fashion
+          </h1>
+          <p class="lead">
+                          Best my-fashion Tips and Ideas website . Search anything about my-fashion Ideas in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Was Mail Ever Delivered Twice A Day</h2>
+    <p><strong>Was Mail Ever Delivered Twice A Day</strong>. People don&#039;t want but postal management did when. Then you should be able to see at which point it gets duplicated.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=was%20mail%20ever%20delivered%20twice%20a%20day" alt="Fullday kindergarten spending may deliver twice the returns report" />
+        <br>
+        <figcaption>Fullday kindergarten spending may deliver twice the returns report from www.theglobeandmail.com</figcaption>
+    </figure>
+        <p>
+        Nov 21st, 2012 at 8:10 am. Home delivery routes would go by every house 12 times a day — yes,. The twice a day deliveries were phased out before the post office department became usps in 1971.
+    </p>
+    <h3>Fullday kindergarten spending may deliver twice the returns report</h3>
+    <p>According to ms holgate, it&#039;s a matter of demand. Our post office is part of a one stop shop store in our community and all mail goes there. Soon there will only be a letter delivery every second day in metro areas. In less busy places the mail went out less frequently.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fullday kindergarten spending may deliver twice the returns report" data-src="https://i2.wp.com/www.theglobeandmail.com/resizer/mn3rpH6khjVyfZIQrRYrMkYqZGY=/1200x0/filters:quality(80)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/YNVY2EWTZ5FBFDLQCYW7GYK5TE" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.theglobeandmail.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Technology made this frequency of service obsolete, as the use of pneumatic tub. Mail delivered twice a day? Other than special delivery which was always delivered seven days a week. I remember in th early 70&#039;s mail being delivered twice a day in watertown ny. In victorian london, though service wasn&#039;t 24/7, it was close to 12/6.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="10 Things You May Not Know About the Pony Express History Lists" data-src="https://i2.wp.com/cdn.history.com/sites/2/2016/06/Pony_Express_Poster-E.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.history.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">According to ms holgate, it&#039;s a matter of demand. Parcel deliveries, on the other hand, have sky rocketed. Was mail ever delivered on sunday? Carriers walked as many as 22 miles a day, carrying up to 50 pounds of mail at a time. Delivery to me , not from me.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ready to compete USPS News Link" data-src="https://i2.wp.com/link.usps.com/wp-content/uploads/2019/07/PackagesREVISED4b_large-story.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: link.usps.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Carriers walked as many as 22 miles a day, carrying up to 50 pounds of mail at a time. Soon there will only be a letter delivery every second day in metro areas. In victorian london, though service wasn&#039;t 24/7, it was close to 12/6. Home delivery routes would go by every house 12 times a day — yes,. Carriers.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="male-clothes-types.html" class="be-post-title">
+				 <h6>male clothes types </h6>
+                </a>
+                <a href="male-clothes-types.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=male%20clothes%20types&amp;w=50&amp;h=50&amp;c=7" alt="male clothes types">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-co-branding-with-examples.html" class="be-post-title">
+				 <h6>what is co branding with examples </h6>
+                </a>
+                <a href="what-is-co-branding-with-examples.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20co%20branding%20with%20examples&amp;w=50&amp;h=50&amp;c=7" alt="what is co branding with examples">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="best-times-to-post-on-instagram-toronto.html" class="be-post-title">
+				 <h6>best times to post on instagram toronto </h6>
+                </a>
+                <a href="best-times-to-post-on-instagram-toronto.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=best%20times%20to%20post%20on%20instagram%20toronto&amp;w=50&amp;h=50&amp;c=7" alt="best times to post on instagram toronto">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="part-time-retail-jobs.html" class="be-post-title">
+				 <h6>part.time.retail jobs </h6>
+                </a>
+                <a href="part-time-retail-jobs.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=part.time.retail%20jobs&amp;w=50&amp;h=50&amp;c=7" alt="part.time.retail jobs">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="brand-resonance-example.html" class="be-post-title">
+				 <h6>brand resonance example </h6>
+                </a>
+                <a href="brand-resonance-example.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=brand%20resonance%20example&amp;w=50&amp;h=50&amp;c=7" alt="brand resonance example">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="paris-fashion-week-f-w-21-september-26th-2021.html" class="be-post-title">
+				 <h6>paris fashion week f/w 21 - september 26th 2021 </h6>
+                </a>
+                <a href="paris-fashion-week-f-w-21-september-26th-2021.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=paris%20fashion%20week%20f%2Fw%2021%20-%20september%2026th%202021&amp;w=50&amp;h=50&amp;c=7" alt="paris fashion week f/w 21 - september 26th 2021">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="best-part-time-evening-jobs.html" class="be-post-title">
+				 <h6>best part time evening jobs </h6>
+                </a>
+                <a href="best-part-time-evening-jobs.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=best%20part%20time%20evening%20jobs&amp;w=50&amp;h=50&amp;c=7" alt="best part time evening jobs">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="old-fashioned-man-definition.html" class="be-post-title">
+				 <h6>old fashioned man definition </h6>
+                </a>
+                <a href="old-fashioned-man-definition.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=old%20fashioned%20man%20definition&amp;w=50&amp;h=50&amp;c=7" alt="old fashioned man definition">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bruno-mars-performance-victoria-s-secret-fashion-show-2016.html" class="be-post-title">
+				 <h6>bruno mars performance victoria&#039;s secret fashion show 2016 </h6>
+                </a>
+                <a href="bruno-mars-performance-victoria-s-secret-fashion-show-2016.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bruno%20mars%20performance%20victoria%27s%20secret%20fashion%20show%202016&amp;w=50&amp;h=50&amp;c=7" alt="bruno mars performance victoria&amp;#039;s secret fashion show 2016">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="elegant-casual-men-s-dress-code.html" class="be-post-title">
+				 <h6>elegant casual men&#039;s dress code </h6>
+                </a>
+                <a href="elegant-casual-men-s-dress-code.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=elegant%20casual%20men%27s%20dress%20code&amp;w=50&amp;h=50&amp;c=7" alt="elegant casual men&amp;#039;s dress code">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Thefa Fashion Ideas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        New York Times Fashion Photographer Bill Cunningham at My-Fashion
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Thefa",
+    "url": "https://www.google.com/search?q=Thefa"
+  },
+  "headline": "New York Times Fashion Photographer Bill Cunningham",
+  "datePublished": "2022-05-27T05:12:52Z",
+  "image": "https://tse1.mm.bing.net/th?q=new%20york%20times%20fashion%20photographer%20bill%20cunningham",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Thefa Fashion Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=new%20york%20times%20fashion%20photographer%20bill%20cunningham&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=new%20york%20times%20fashion%20photographer%20bill%20cunningham" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=new%20york%20times%20fashion%20photographer%20bill%20cunningham" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Thefa Fashion Ideas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            New York Times Fashion Photographer Bill Cunningham at My-Fashion
+          </h1>
+          <p class="lead">
+                          Best my-fashion Tips and Ideas website . Search anything about my-fashion Ideas in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">New York Times Fashion Photographer Bill Cunningham</h2>
+    <p><strong>New York Times Fashion Photographer Bill Cunningham</strong>. As anyone knows who has seen the documentary “ bill cunningham new york ” — playing through april 7 at the film forum in manhattan and elsewhere — mr. Bill cunningham was an american fashion icon and photographer for the new york times from 1978 to 2016, known for his candid and street photography.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=new%20york%20times%20fashion%20photographer%20bill%20cunningham" alt="Legendary photographer Bill Cunningham, dead at 87 The Star" />
+        <br>
+        <figcaption>Legendary photographer Bill Cunningham, dead at 87 The Star from www.thestar.com</figcaption>
+    </figure>
+        <p>
+        The late new york times photographer bill cunningham is the subject of a new immersive exhibit. New york times executive editor dean baquet discusses his life and his nearly 40 years of work for. In his posthumous book, “fashion climbing,” the times’s onetime fashion and society photographer recalls.
+    </p>
+    <h3>Legendary photographer Bill Cunningham, dead at 87 The Star</h3>
+    <p>Bill cunningham, the iconic new york times fashion photographer who darted around new york city on a humble bicycle to cover the style of high society grand dames and. The late new york times photographer bill cunningham is the subject of a new immersive exhibit. Bill cunningham, the legendary fashion photographer for the new york times, has died, after being hospitalized earlier in the week following a stroke. Bill cunningham, who photographed fashion trends for the new york times for almost 40 years, has died at 87, the newspaper confirmed.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bill Cunningham, New York Times fashion photographer, dies at 87" data-src="https://i2.wp.com/imengine.prod.srp.navigacloud.com/?uuid=8E917AE5-22F6-42DD-A8F7-BA8C82887259&amp;type=primary&amp;q=72&amp;width=1200" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pressdemocrat.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">R ichard press’s documentary film bill cunningham new york is a charming portrait of the idiosyncratic photographer’s pursuit of. With bill cunningham, editta sherman, patrick mcdonald, howard koda. New york times executive editor dean baquet discusses his life and his nearly 40 years of work for. Bill cunningham — wearing his signature, blue french workman’s jacket — was a fixture.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bill Cunningham, The Godfather of Street Style Photography, Is Dead at" data-src="https://i2.wp.com/media.gq.com/photos/576f06e42f8996151d6ab68d/master/w_640%2Cc_limit/Bill-Cunningham-portrait-getty.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.gq.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Fashion books of all time another. Self taught new york times photographer bill cunningham was known and beloved for his street style portraiture. New york times photographer bill cunningham died saturday at the age of 87. Bill cunningham — wearing his signature, blue french workman’s jacket — was a fixture on new york’s streets as he cycled around clicking pictures.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Legendary photographer Bill Cunningham, dead at 87 The Star" data-src="https://i2.wp.com/images.thestar.com/2uSnNV7MlrUScBYNFQQeSUObcDE=/1086x725/smart/filters:cb(2700061000)/https://i2.wp.com/www.thestar.com/content/dam/thestar/news/world/2016/06/25/legendary-fashion-photographer-bill-cunningham-dead-at-87/cunninghamcamerajpg.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.thestar.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bill cunningham was an american fashion icon and photographer for the new york times from 1978 to 2016, known for his candid and street photography. Self taught new york times photographer bill cunningham was known and beloved for his street style portraiture. Bill cunningham, the new york times fashion photographer who revolutionised the art of capturing portraits of everyday people.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="do-all-louis-vuitton-wallets-have-a-serial-number.html" class="be-post-title">
+				 <h6>do all louis vuitton wallets have a serial number </h6>
+                </a>
+                <a href="do-all-louis-vuitton-wallets-have-a-serial-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=do%20all%20louis%20vuitton%20wallets%20have%20a%20serial%20number&amp;w=50&amp;h=50&amp;c=7" alt="do all louis vuitton wallets have a serial number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="fashion-show-mall-parking-directions.html" class="be-post-title">
+				 <h6>fashion show mall parking directions </h6>
+                </a>
+                <a href="fashion-show-mall-parking-directions.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=fashion%20show%20mall%20parking%20directions&amp;w=50&amp;h=50&amp;c=7" alt="fashion show mall parking directions">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="when-is-paris-fashion-week-2021.html" class="be-post-title">
+				 <h6>when is paris fashion week 2021 </h6>
+                </a>
+                <a href="when-is-paris-fashion-week-2021.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=when%20is%20paris%20fashion%20week%202021&amp;w=50&amp;h=50&amp;c=7" alt="when is paris fashion week 2021">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="uk-part-time-jobs-salary.html" class="be-post-title">
+				 <h6>uk part time jobs salary </h6>
+                </a>
+                <a href="uk-part-time-jobs-salary.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=uk%20part%20time%20jobs%20salary&amp;w=50&amp;h=50&amp;c=7" alt="uk part time jobs salary">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="male-50th-birthday-ideas-uk.html" class="be-post-title">
+				 <h6>male 50th birthday ideas uk </h6>
+                </a>
+                <a href="male-50th-birthday-ideas-uk.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=male%2050th%20birthday%20ideas%20uk&amp;w=50&amp;h=50&amp;c=7" alt="male 50th birthday ideas uk">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-most-recent-episode-of-outlander.html" class="be-post-title">
+				 <h6>what is the most recent episode of outlander </h6>
+                </a>
+                <a href="what-is-the-most-recent-episode-of-outlander.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20most%20recent%20episode%20of%20outlander&amp;w=50&amp;h=50&amp;c=7" alt="what is the most recent episode of outlander">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="victoria-s-secret-fashion-show-2014-full-hd.html" class="be-post-title">
+				 <h6>victoria&#039;s secret fashion show 2014 full hd </h6>
+                </a>
+                <a href="victoria-s-secret-fashion-show-2014-full-hd.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=victoria%27s%20secret%20fashion%20show%202014%20full%20hd&amp;w=50&amp;h=50&amp;c=7" alt="victoria&amp;#039;s secret fashion show 2014 full hd">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="where-to-spend-a-romantic-weekend-near-me.html" class="be-post-title">
+				 <h6>where to spend a romantic weekend near me </h6>
+                </a>
+                <a href="where-to-spend-a-romantic-weekend-near-me.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=where%20to%20spend%20a%20romantic%20weekend%20near%20me&amp;w=50&amp;h=50&amp;c=7" alt="where to spend a romantic weekend near me">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-business-ethics-mean-to-you.html" class="be-post-title">
+				 <h6>what does business ethics mean to you </h6>
+                </a>
+                <a href="what-does-business-ethics-mean-to-you.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20business%20ethics%20mean%20to%20you&amp;w=50&amp;h=50&amp;c=7" alt="what does business ethics mean to you">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="does-royal-mail-come-everyday.html" class="be-post-title">
+				 <h6>does royal mail come everyday </h6>
+                </a>
+                <a href="does-royal-mail-come-everyday.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=does%20royal%20mail%20come%20everyday&amp;w=50&amp;h=50&amp;c=7" alt="does royal mail come everyday">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Thefa Fashion Ideas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>
